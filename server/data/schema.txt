@@ -1,0 +1,12 @@
+articles:
+id SERIAL PRIMARY KEY,
+title VARCHAR(50),
+content TEXT,
+tags TEXT[],
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+users:
+id SERIAL PRIMARY KEY,
+username VARCHAR(50),
+password TEXT,
+email VARCHAR(50)
